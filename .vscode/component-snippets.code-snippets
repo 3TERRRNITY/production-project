@@ -1,0 +1,23 @@
+{
+  "ReactComponent": {
+    "scope": "typescriptreact",
+    "prefix": "rc",
+    "body": [
+      "import { classNames } from \"shared/lib/classNames/classNames\";",
+      "import cls from \"./${1:${TM_FILENAME_BASE}}.module.scss\";",
+      "",
+      "interface ${1}Props {",
+      "    className?: string;",
+      "}",
+      "",
+      "export const ${1} = ({ className }: ${1}Props) => {",
+      "    return (",
+      "        <div className={classNames(cls.${1}, {}, [className])}>",
+      "            ${0}",
+      "        </div>",
+      "    );",
+      "};"
+    ],
+    "description": "Создаёт функциональный компонент с classNames по образцу LangSwitcher (имя берётся из имени файла)"
+  }
+}
