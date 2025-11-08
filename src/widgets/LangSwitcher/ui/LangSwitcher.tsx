@@ -1,9 +1,9 @@
-import {classNames} from "shared/lib/classNames/classNames";
+import {classNames} from "shared/lib/classNames/classNames"
 import cls from './LangSwitcher.module.scss'
-import {AppButton, ThemeButton} from "shared/ui/AppButton/AppButton";
-import {useTranslation} from "react-i18next";
-import RuLangIcon from "shared/assets/icons/langSwitcher-ru.svg";
-import EnLangIcon from "shared/assets/icons/langSwitcher-en.svg";
+import {AppButton, ThemeButton} from "shared/ui/AppButton/AppButton"
+import {useTranslation} from "react-i18next"
+import RuLangIcon from "shared/assets/icons/langSwitcher-ru.svg"
+import EnLangIcon from "shared/assets/icons/langSwitcher-en.svg"
 
 interface LangSwitcherProps {
     className?: string;
@@ -23,6 +23,6 @@ export const LangSwitcher = ({className}: LangSwitcherProps) => {
                 : <EnLangIcon />
             }
         </AppButton>
-    );
-};
+    )
+}
 

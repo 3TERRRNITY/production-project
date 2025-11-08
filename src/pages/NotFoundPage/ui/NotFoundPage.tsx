@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 import cls from "./NotFoundPage.module.scss"
 
 export const NotFoundPage = () => {
@@ -7,5 +7,5 @@ export const NotFoundPage = () => {
     <div className={cls.NotFoundPage}>
       {t("not_found_page")}
     </div>
-  );
-};
+  )
+}
